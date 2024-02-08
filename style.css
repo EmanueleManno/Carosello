@@ -1,0 +1,74 @@
+/*CSS RESET*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*UTILITIES*/
+body {
+    font-family: sans-serif;
+    background-color: lightgoldenrodyellow;
+}
+
+/*GENERICS*/
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/*CAROSELLO*/
+#carousel {
+    height: 500px;
+    width: 800px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#carousel .gallery {
+    height: 100%;
+}
+
+#carousel img {
+    height: 400px;
+    width: 800px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: none;
+}
+
+#carousel img.active {
+    display: block;
+}
+
+#carousel i {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    translate: 0 -50%;
+}
+
+/*BOTTONE PREV*/
+#prev {
+    right: 105%;
+}
+
+/*BOTTONE NEXT*/
+#next {
+    left: 105%;
+}
+
+/*THUMBNAILS*/
+#thumbnails img {
+    width: 115px;
+    height: 90px;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+/*FIGCAPTION*/
+h2 {
+    color: darkorange;
+    font-weight: bold;
+}
